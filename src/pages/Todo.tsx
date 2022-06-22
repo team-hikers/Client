@@ -1,5 +1,11 @@
-const Todo = () => {
-  return <></>
-}
+import TodoList from '../components/TodoList';
 
-export default Todo
+const Todo = () => {
+  return (
+    <>
+      <TodoList />
+    </>
+  );
+};
+
+export default Todo;

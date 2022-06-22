@@ -1,6 +1,15 @@
-const TodoItem = () => {
-  
-  return <></>
-}
+type Props = {
+  id: number;
+  contents: string;
+  isComplete: boolean;
+};
 
-export default TodoItem
+const TodoItem = ({ id, contents, isComplete }: Props) => {
+  return (
+    <li>
+      {isComplete ? '완료' : '미완료'} {contents}
+    </li>
+  );
+};
+
+export default TodoItem;
