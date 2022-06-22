@@ -4,8 +4,11 @@
 
 - Github issue 관리
 - Commit, Branch 관리
+- GraphQL 적용
 - 컴포넌트 추상화
 - 컴포넌트 최대한 쪼개보기
+- 커스텀훅 사용해보기
+- 리액트 테스트 코드 적용
 
 ## Commit Convention
 
