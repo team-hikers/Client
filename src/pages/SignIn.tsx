@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import Input from '../components/Input';
 
 const SignIn = () => {
   const [loginData, setLoginData] = useState({
@@ -11,8 +12,8 @@ const SignIn = () => {
   }, [loginData]);
   return (
     <>
-      <input type='text' name='id' onChange={handleChange} />
-      <input type='text' name='password' onChange={handleChange} />
+      <Input name='id' onChange={handleChange} />
+      <Input name='password' onChange={handleChange} />
       <button onClick={handleClick}>로그인</button>
     </>
   );
