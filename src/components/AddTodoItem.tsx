@@ -1,6 +1,4 @@
 import { useEffect, useState } from 'react';
-import Button from './Button';
-import Input from './Input';
 
 const AddTodoItem = () => {
   const [inputText, setInputText] = useState('');
@@ -10,8 +8,8 @@ const AddTodoItem = () => {
   }, [inputText]);
   return (
     <>
-      <Input name='contents' onChange={handleChange} />
-      <Button label='추가' onClick={handleClick} />
+      <input type='text' name='contents' onChange={handleChange} />
+      <button onClick={handleClick}>추가</button>
     </>
   );
   function handleChange({ target: { value } }: { target: { value: string } }) {
