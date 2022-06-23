@@ -1,7 +1,5 @@
 import { useState } from 'react';
 import styled from 'styled-components';
-import Button from '../components/Button';
-import Input from '../components/Input';
 
 const SignIn = () => {
   const [loginData, setLoginData] = useState({
@@ -12,9 +10,9 @@ const SignIn = () => {
   return (
     <Container>
       <h2>로그인</h2>
-      <Input name='id' placeholder='아이디' onChange={handleChange} />
-      <Input name='password' placeholder='비밀번호' onChange={handleChange} />
-      <Button label='로그인' onClick={handleClick} />
+      <Input type='text' name='id' placeholder='아이디' onChange={handleChange} />
+      <Input type='password' name='password' placeholder='비밀번호' onChange={handleChange} />
+      <Button onClick={handleClick}>로그인</Button>
       <p>
         아직 회원이 아니라면? <button>회원가입</button>
       </p>
@@ -37,9 +35,28 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-color: #fff;
-  border-radius: 10px;
-  width: 500px;
-  height: 400px;
-  padding: 50px;
+  height: 300px;
 `;
+
+const Input = styled.input`
+  border: 1px solid #6a6a6a;
+  border-radius: 7px;
+  width: 350px;
+  height: 40px;
+  padding: 20px 5px;
+`;
+
+const Button = styled.button`
+  background-color: #6A6A6A;
+  color: #fff;
+  border-radius: 7px;
+  width: 350px;
+  height: 40px;
+  transition: .2s;
+  &:hover {
+    filter: brightness(115%);
+  }
+  &:active {
+    filter: brightness(85%);
+  }
+`
