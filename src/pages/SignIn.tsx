@@ -14,7 +14,14 @@ const SignIn = () => {
       <Input type='password' name='password' placeholder='비밀번호' onChange={handleChange} />
       <Button onClick={handleClick}>로그인</Button>
       <p>
-        아직 회원이 아니라면? <button>회원가입</button>
+        아직 회원이 아니라면?{' '}
+        <button
+          onClick={() => {
+            console.log('로그인 페이지로 이동');
+          }}
+        >
+          회원가입
+        </button>
       </p>
     </Container>
   );
@@ -47,16 +54,16 @@ const Input = styled.input`
 `;
 
 const Button = styled.button`
-  background-color: #6A6A6A;
+  background-color: #6a6a6a;
   color: #fff;
   border-radius: 7px;
   width: 350px;
   height: 40px;
-  transition: .2s;
+  transition: 0.2s;
   &:hover {
     filter: brightness(115%);
   }
   &:active {
     filter: brightness(85%);
   }
-`
+`;
