@@ -7,7 +7,7 @@
   {
     "id": 2,
     "contents": "데이터2",
-    "isComplete": false
+    "isComplete": true
   },
   {
     "id": 3,
@@ -17,6 +17,6 @@
   {
     "id": 4,
     "contents": "데이터4",
-    "isComplete": false
+    "isComplete": true
   }
 ]
