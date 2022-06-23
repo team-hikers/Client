@@ -1,5 +1,3 @@
-import Button from './Button';
-
 type Props = {
   id: number;
   contents: string;
@@ -15,7 +13,7 @@ const TodoItem = ({ id, contents, isComplete }: Props) => {
         onChange={() => toggleCompleteTodoItem(id, isComplete)}
       />
       {isComplete ? '완료' : '미완료'} {contents}
-      <Button label='삭제' onClick={() => deleteTodoItem(id)} />
+      <button onClick={() => deleteTodoItem(id)}>삭제</button>
     </li>
   );
   function toggleCompleteTodoItem(id: number, isComplete: boolean) {
