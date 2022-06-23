@@ -12,11 +12,11 @@ const SignIn = () => {
     console.log(loginData);
   }, [loginData]);
   return (
-    <>
+    <div>
       <Input name='id' onChange={handleChange} />
       <Input name='password' onChange={handleChange} />
       <Button label='로그인' onClick={handleClick} />
-    </>
+    </div>
   );
   function handleChange({ target: { value, name } }: { target: { value: string; name: string } }) {
     setLoginData((prev) => ({ ...prev, [name]: value }));

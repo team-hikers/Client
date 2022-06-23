@@ -13,12 +13,12 @@ const SignUp = () => {
     console.log(signUpData);
   }, [signUpData]);
   return (
-    <>
+    <div>
       <Input name='id' onChange={handleChange} />
       <Input name='password' onChange={handleChange} />
       <Input name='confirmPassword' onChange={handleChange} />
       <Button label='회원가입' onClick={handleClick} />
-    </>
+    </div>
   );
   function handleChange({ target: { value, name } }: { target: { value: string; name: string } }) {
     setsignUpData((prev) => ({ ...prev, [name]: value }));
