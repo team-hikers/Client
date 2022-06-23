@@ -14,9 +14,9 @@ const SignUp = () => {
   }, [signUpData]);
   return (
     <div>
-      <Input name='id' onChange={handleChange} />
-      <Input name='password' onChange={handleChange} />
-      <Input name='confirmPassword' onChange={handleChange} />
+      <Input name='id' placeholder='아이디' onChange={handleChange} />
+      <Input name='password' placeholder='비밀번호' onChange={handleChange} />
+      <Input name='confirmPassword' placeholder='비밀번호 확인' onChange={handleChange} />
       <Button label='회원가입' onClick={handleClick} />
     </div>
   );

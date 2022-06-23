@@ -8,9 +8,9 @@ function App() {
   return (
     <Container>
       <GlobalStyle />
-      <Todo />
+      {/* <Todo /> */}
       <SignIn />
-      <SignUp />
+      {/* <SignUp /> */}
     </Container>
   );
 }

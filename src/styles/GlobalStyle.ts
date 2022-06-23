@@ -7,6 +7,9 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-family: 'Noto Sans KR', sans-serif;
   }
+  body {
+    background-color: #F8F8F8;
+  }
   li {
     list-style: none;
   }
