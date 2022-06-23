@@ -17,7 +17,7 @@ const SignIn = () => {
         아직 회원이 아니라면?{' '}
         <button
           onClick={() => {
-            console.log('로그인 페이지로 이동');
+            console.log('회원가입 페이지로 이동');
           }}
         >
           회원가입

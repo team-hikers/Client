@@ -1,6 +1,6 @@
 import SignIn from './pages/SignIn';
 import Todo from './pages/Todo';
-import SignUp from './pages/SignIn';
+import SignUp from './pages/SignUp';
 import GlobalStyle from './styles/GlobalStyle';
 import styled from 'styled-components';
 
