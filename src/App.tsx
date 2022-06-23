@@ -1,8 +1,12 @@
-import Todo from "./pages/Todo";
+import SignIn from './pages/SignIn';
+import Todo from './pages/Todo';
 
 function App() {
   return (
-    <><Todo></Todo></>
+    <>
+      <Todo />
+      <SignIn />
+    </>
   );
 }
 
