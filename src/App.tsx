@@ -16,7 +16,7 @@ function App() {
 		} else {
 			navigate('/signin');
 		}
-	}, [isToken]);
+	}, [isToken, navigate]);
 
   return (
     <Container>
